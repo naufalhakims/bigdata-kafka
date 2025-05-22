@@ -34,7 +34,7 @@ services:
     environment:
       - SPARK_MODE=client
       - HOME=/home/sparkuser
-    user: root # Jalankan sebagai root agar bisa buat user baru
+    user: root 
     volumes:
       - ./app:/app
     working_dir: /app
