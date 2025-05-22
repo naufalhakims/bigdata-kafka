@@ -107,6 +107,8 @@ docker exec -it kafka bash
 kafka-topics --create --topic sensor-suhu-gudang --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1
 kafka-topics --create --topic sensor-kelembaban-gudang --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1
 ```
+![image](https://github.com/user-attachments/assets/cd28550a-3cd2-4f1b-baa0-b2de3fc9ed6f)
+
 4. Copy direktori proyek ke app lalu masuk ke dalamnya
 ```bash
 docker cp "D:\PATH\KE\DIREKTORI\PROYEK" pyspark:/app/ 
