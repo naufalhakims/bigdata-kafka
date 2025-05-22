@@ -127,7 +127,9 @@ python producer_kelembaban.py
 
 7. Buat terminal baru untuk menjalankan `consumer_pyspark.py`
 ```bash
-python consumer_pyspark.py
+spark-submit \
+ --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.0 \
+ consumer_pyspark.py
 ```
 ![image](https://github.com/user-attachments/assets/b5976f47-f8d9-49a9-a2ff-a3638c8dabf3)
 ![image](https://github.com/user-attachments/assets/bcc78e61-4a03-4f76-a713-dc01f3319657)
